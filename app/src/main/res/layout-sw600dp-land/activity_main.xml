@@ -13,15 +13,7 @@
         android:id="@+id/fragmentFeedList"
         android:layout_weight="1"
         android:layout_margin="@dimen/secondary_margin"
-        tools:context="szgrc.feedreader.ui.activities.FeedsListActivity"/>
-
-    <!-- Feeds detail -->
-    <fragment
-        android:id="@+id/fragmentDetailsFeed"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        class="szgrc.feedreader.ui.fragments.FeedDetailsFragment"
+        class="szgrc.feedreader.ui.fragments.FeedListFragment"
         tools:context="szgrc.feedreader.ui.activities.FeedsListActivity"/>
 
 
