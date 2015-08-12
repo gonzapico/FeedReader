@@ -5,4 +5,6 @@ package szgrc.feedreader.executor;
  */
 public interface Interactor {
     void run();
+
+    void execute();
 }
