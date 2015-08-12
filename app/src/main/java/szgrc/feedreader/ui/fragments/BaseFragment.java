@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import butterknife.ButterKnife;
+import szgrc.feedreader.ui.activities.BaseActivity;
 
 /**
  * Base fragment created with the same function of base activity.
@@ -18,6 +19,7 @@ public abstract class BaseFragment extends Fragment{
 
     @Override public void onAttach(Activity activity) {
         super.onAttach(activity);
+        injectDependencies();
     }
 
     @Override public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -41,5 +43,9 @@ public abstract class BaseFragment extends Fragment{
      */
     private void injectViews(final View view) {
         ButterKnife.bind(this, view);
+    }
+
+    private void injectDependencies() {
+        ((BaseActivity) getActivity()).inject(this);
     }
 }

@@ -7,6 +7,8 @@ import dagger.Module;
 import dagger.Provides;
 
 /**
+ * Dagger module con the scope of the activity
+ *
  * Created by gonzalofernandez on 11/08/15.
  */
 @Module(library = true) public final class ActivityModule {
