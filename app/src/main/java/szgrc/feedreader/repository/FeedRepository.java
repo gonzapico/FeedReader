@@ -2,7 +2,7 @@ package szgrc.feedreader.repository;
 
 import java.util.List;
 
-import szgrc.feedreader.domain.Feed;
+import szgrc.feedreader.domain.feed.Feed;
 
 /**
  * Created by gonzalofernandez on 11/08/15.
@@ -10,8 +10,6 @@ import szgrc.feedreader.domain.Feed;
 public interface FeedRepository {
 
     List<Feed> obtainContacts();
-//            throws RetrieveContactsException;
 
     Feed obtain(String id);
-//            throws CannotObtainContactException;
 }
